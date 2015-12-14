@@ -1,0 +1,347 @@
+obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUAffectorManager.o: \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.cpp \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/CCRef.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/log.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCMath.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCMathBase.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.inl \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.inl \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccMacros.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/CCConsole.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/sys/select.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCStdC.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCStdC-android.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccRandom.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.inl \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.inl \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Quaternion.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Quaternion.inl \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h \
+ /Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./3d/CCAABB.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccTypes.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCGeometry.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCGL.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCGL-android.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
+ /Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/CCRef.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccConfig.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/log.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCMath.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCMathBase.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.inl:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec2.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.inl:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec3.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccMacros.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/CCConsole.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/sys/select.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCStdC.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCStdC-android.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccRandom.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.inl:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.inl:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Vec4.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Mat4.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Quaternion.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/Quaternion.inl:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./3d/CCAABB.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./base/ccTypes.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./math/CCGeometry.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/CCGL.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./platform/android/CCGL-android.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
+
+/Users/cyruslam/Development/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h:
