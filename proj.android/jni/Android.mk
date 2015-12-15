@@ -10,9 +10,19 @@ LOCAL_MODULE := cocos2dcpp_shared
 
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
-LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../Classes/AppDelegate.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+#FILE_LIST := $(wildcard $(LOCAL_PATH)/[DIRECTORY]/*.cpp)
+#LOCAL_SRC_FILES := hellocpp/main.cpp \
+#                   ../../Classes/AppDelegate.cpp \
+#                   ../../Classes/HelloWorldScene.cpp
+# replace as below
+HELLOCPP_FILES  := $(wildcard $(LOCAL_PATH)/hellocpp/*.cpp)
+HELLOCPP_FILES  := $(HELLOCPP_FILES:$(LOCAL_PATH)/%=%)
+
+CLASSES_FILES   := $(wildcard $(LOCAL_PATH)/../../Classes/*.cpp)
+CLASSES_FILES   := $(CLASSES_FILES:$(LOCAL_PATH)/%=%)
+
+LOCAL_SRC_FILES := $(HELLOCPP_FILES)
+LOCAL_SRC_FILES += $(CLASSES_FILES)
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
