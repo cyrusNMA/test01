@@ -351,7 +351,12 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: 
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCBool.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCString.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
- /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
+ jni/../../Classes/SceneManager.h jni/../../Classes/InGameScene.h \
+ jni/../../Classes/GameMap.h jni/../../Classes/Charactor.h \
+ jni/../../Classes/UT_Player.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/Export.h
 
 jni/../../Classes/HelloWorldScene.h:
 
@@ -1056,3 +1061,17 @@ jni/../../Classes/HelloWorldScene.h:
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
+
+jni/../../Classes/SceneManager.h:
+
+jni/../../Classes/InGameScene.h:
+
+jni/../../Classes/GameMap.h:
+
+jni/../../Classes/Charactor.h:
+
+jni/../../Classes/UT_Player.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/Export.h:

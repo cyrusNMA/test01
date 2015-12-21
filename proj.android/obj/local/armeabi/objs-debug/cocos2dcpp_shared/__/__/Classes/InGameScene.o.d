@@ -350,7 +350,8 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/InGameScene.o: \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCBool.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCString.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
- /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
+ jni/../../Classes/GameMap.h jni/../../Classes/Charactor.h
 
 jni/../../Classes/InGameScene.h:
 
@@ -1055,3 +1056,7 @@ jni/../../Classes/InGameScene.h:
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
+
+jni/../../Classes/GameMap.h:
+
+jni/../../Classes/Charactor.h:

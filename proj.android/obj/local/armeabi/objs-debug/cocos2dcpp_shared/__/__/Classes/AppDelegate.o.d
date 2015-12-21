@@ -352,7 +352,10 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/AppDelegate.o: \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
  jni/../../Classes/SceneManager.h jni/../../Classes/HelloWorldScene.h \
- jni/../../Classes/InGameScene.h
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/Export.h \
+ jni/../../Classes/InGameScene.h jni/../../Classes/GameMap.h \
+ jni/../../Classes/Charactor.h jni/../../Classes/UT_Player.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -1062,4 +1065,14 @@ jni/../../Classes/SceneManager.h:
 
 jni/../../Classes/HelloWorldScene.h:
 
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/audio/android/../include/Export.h:
+
 jni/../../Classes/InGameScene.h:
+
+jni/../../Classes/GameMap.h:
+
+jni/../../Classes/Charactor.h:
+
+jni/../../Classes/UT_Player.h:
