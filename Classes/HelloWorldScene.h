@@ -2,6 +2,8 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "SceneManager.h"
+#include "SimpleAudioEngine.h"  
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -14,6 +16,7 @@ public:
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
+    void startGameCallBack(cocos2d::Ref* pSender);
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);

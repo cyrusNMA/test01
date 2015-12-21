@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "SceneManager.h"
+
+
 
 USING_NS_CC;
 
@@ -7,8 +9,8 @@ AppDelegate::AppDelegate() {
 
 }
 
-AppDelegate::~AppDelegate() 
-{
+AppDelegate::~AppDelegate() {
+    
 }
 
 //if you want a different context,just modify the value of glContextAttrs
@@ -34,24 +36,31 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("My Game");
+        glview = GLViewImpl::createWithRect("My Game",Rect(0, 0, 480, 320),1.0);
         director->setOpenGLView(glview);
     }
-
+    
+    // 1
+    Size designSize = Size(480,320);
+    Size resourceSize = Size(960,640);
+    // 2
+    director->setContentScaleFactor(resourceSize.height / designSize.height);
+    director->getOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, ResolutionPolicy::FIXED_HEIGHT);
+    
     // turn on display FPS
     director->setDisplayStats(true);
-
+    
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-
+    
     register_all_packages();
-
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
-
+    
+    auto sceneManager = SceneManager::getInstance();
+    
+    sceneManager->Goto(SceneManager::vailScene::Menu);
+    //Unit test
+//    sceneManager->Goto(SceneManager::vailScene::UT_player);
+    
     return true;
 }
 

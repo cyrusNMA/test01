@@ -33,7 +33,13 @@ bool HelloWorld::init()
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
     //    you may modify it.
-
+    
+    // add a "start" lable to change scene
+    auto startLableItem = MenuItemLabel::create(cocos2d::Label::createWithTTF("START GAME", "fonts/Marker Felt.ttf", 50), CC_CALLBACK_1(HelloWorld::startGameCallBack, this));
+    
+    startLableItem->setPosition(Vec2(origin.x + visibleSize.width/2 ,
+                                origin.y + visibleSize.height/2));
+    
     // add a "close" icon to exit the progress. it's an autorelease object
     auto closeItem = MenuItemImage::create(
                                            "CloseNormal.png",
@@ -44,7 +50,7 @@ bool HelloWorld::init()
                                 origin.y + closeItem->getContentSize().height/2));
 
     // create menu, it's an autorelease object
-    auto menu = Menu::create(closeItem, NULL);
+    auto menu = Menu::create(closeItem, startLableItem, NULL);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
@@ -63,6 +69,7 @@ bool HelloWorld::init()
     // add the label as a child to this layer
     this->addChild(label, 1);
 
+    
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
 
@@ -72,6 +79,10 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
     
+    
+    //player BGM
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("sounds/noname_01.mp3", true);
+
     return true;
 }
 
@@ -88,4 +99,13 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+}
+
+void HelloWorld::startGameCallBack(Ref *pSender)
+{
+    MessageBox("You pressed the start button. Windows Store Apps do not implement a close button.","Alert");
+    
+    SceneManager::getInstance()->Goto(SceneManager::vailScene::InGame);
+    
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
 }
