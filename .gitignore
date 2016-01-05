@@ -36,8 +36,8 @@ captures/
 *.d
 *.so
 *.a
-assets/*
-armeabi/*
+proj.android/assets/
+proj.android/obj/
 ant.properties
 
 #########################
