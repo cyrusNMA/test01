@@ -60,6 +60,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     sceneManager->Goto(SceneManager::vailScene::Menu);
     //Unit test
 //    sceneManager->Goto(SceneManager::vailScene::UT_player);
+//    sceneManager->Goto(SceneManager::vailScene::UT_map);
     
     return true;
 }

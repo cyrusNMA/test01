@@ -7,3 +7,8 @@
 //
 
 #include "Charactor.h"
+
+//bool Charactor::init()
+
+
+//void Charactor::ScheduleAttackHandle(float dt)

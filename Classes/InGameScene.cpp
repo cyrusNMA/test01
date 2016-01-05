@@ -11,6 +11,7 @@
 USING_NS_CC;
 
 
+
 Size visibleSize;
 Vec2 origin;
 
@@ -46,77 +47,179 @@ bool InGameScene::init()
     visibleSize = Director::getInstance()->getVisibleSize();
     origin = Director::getInstance()->getVisibleOrigin();
     
-    //set-up touch
-    auto eventListener = EventListenerTouchOneByOne::create();
-    eventListener->onTouchBegan = CC_CALLBACK_2(InGameScene::onTouchBegan, this);
-    
-    //set up ui
-    init_UI();
     
     //set up ingame object
     init_map();
     
-    //set the touch event listener
-    auto player_0 = this->getChildByName(Name_player);
-    if( player_0 != nullptr ){
-            this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(eventListener, player_0);
-    }
+    //set up ui
+    init_UI();
+    
+    this->schedule(schedule_selector(InGameScene::_schedule));
+    
+    
+    //Set the Physics Collision notification
+    auto contactListener = EventListenerPhysicsContact::create();
+    contactListener->onContactBegin = CC_CALLBACK_1(InGameScene::onContactBegan, this);
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
     
     return true;
 }
 
 void InGameScene::init_UI()
 {
-    auto backBtn = MenuItemImage::create("CloseNormal.png","CloseSelected.png",CC_CALLBACK_1(InGameScene::BackToMenuCallback, this));
-    
-    backBtn->setPosition(Vec2(origin.x + visibleSize.width - backBtn->getContentSize().width/2 ,origin.y + backBtn->getContentSize().height/2));
-    
-    // create menu, it's an autorelease object
-    auto menu = Menu::create(backBtn, NULL);
+    // 1 ----- Exit Button
+    auto backBtn = MenuItemImage::create("menu_normal.png","menu_selected.png",CC_CALLBACK_1(InGameScene::BackToMenuCallback, this));
+    backBtn->setPosition(Vec2(origin.x + visibleSize.width - backBtn->getContentSize().width ,origin.y + visibleSize.height - backBtn->getContentSize().height));
+    auto menu = Menu::create(backBtn, NULL);   // create menu, it's an autorelease object
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
     
-    // add a label shows "Hello World"
-    // create and initialize a label
     
-    auto label = Label::createWithTTF("This is InGame Scene", "fonts/Marker Felt.ttf", 24);
+    // 2 ------ BackGround
     
-    // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
     
-    // add the label as a child to this layer
-    this->addChild(label, 1);
+    // 3 ------ set-up Touch
+    auto eventListener = EventListenerTouchOneByOne::create();
+    eventListener->onTouchBegan = CC_CALLBACK_2(InGameScene::onTouchBegan, this);
+    eventListener->onTouchMoved = CC_CALLBACK_2(InGameScene::onTouchMoved, this);
+    eventListener->onTouchEnded = CC_CALLBACK_2(InGameScene::onTouchEnded, this);
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(eventListener, test_player);
+    
+    //Set a touch ball for viual
+    sprit_touchball_state = cocos2d::Sprite::create("res/button-blue.png");
+    sprit_touchball_state->setPosition(cocos2d::Vec2(visibleSize.width - 80 ,visibleSize.height/2 ));
+    sprit_touchball_state->setScale(30 / sprit_touchball_state->getContentSize().width);
+    this->addChild(sprit_touchball_state);
+    
+    //Make a moveable touchball
+    sprit_touchball_move = cocos2d::Sprite::create("res/button-purple.png");
+    sprit_touchball_move->setPosition(cocos2d::Vec2(visibleSize.width - 80 ,visibleSize.height/2 ));
+    sprit_touchball_move->setScale(30 / sprit_touchball_state->getContentSize().width);
+    this->addChild(sprit_touchball_move);
+    
 }
 void InGameScene::init_map()
 {
     //new map layer
-    auto map_0 = new GameMap();
-    map_0->Grend( visibleSize );
-    map_0->setPosition(origin.x, origin.y);
+//    auto map_0 = new GameMap();
+    //If Full Paint FPS Droped to 12 in similter
+    test_map = new GameMap();
+    test_map->BuildMap("res/map/block_01.jpg" , Size(30, 25), (int)PhysicsCategory::Wall, (int)PhysicsCategory::None, (int)PhysicsCategory::Player);
+    this->addChild(test_map);
     
-    auto player_0 = new Player();
-    player_0->setName(Name_player);
-    player_0->setPosition(0 , 0);
-    {
-        //set the skin for the player
-        auto skin = cocos2d::DrawNode::create();
-        skin->drawSolidRect(cocos2d::Vec2::ZERO, cocos2d::Vec2(10, 10), cocos2d::Color4F(1,0,0,1));
-        //make node centered with x
-        skin->setPosition( skin->getContentSize().width/2 , 0);
-        player_0->addChild( skin );
-    }
-    
-    //init bullets
-    for(int i = 0 ; i < 1 ; i++){
-        auto n_bullet = cocos2d::DrawNode::create();
-        n_bullet->drawSolidRect(cocos2d::Vec2::ZERO, cocos2d::Vec2(10, 10), cocos2d::Color4F(1,0.5,0,1));
-        bullets.pushBack(n_bullet);
+    test_player = new Player();
+    test_player->hp = 10;
+    test_player->speed = 100;
+    test_player->attack = 1;
+    test_player->setName("Player");
+    test_player->SetAttackFeq(0.1);
+    test_player->SetBody("");
+    test_player->setPosition(Vec2(visibleSize.width/4, visibleSize.height/2));
+    test_player->setZOrder(1);
+    test_map->addChild(test_player); //*****
+    //create wall crasher
+    if(true){
+        
+        auto play_size = test_player->getChildByName("body")->getContentSize();
+        auto body_phyBody = PhysicsBody::createBox(Size(play_size.width , play_size.height),PhysicsMaterial(0.1f, 1.0f, 0.0f));
+        body_phyBody->setDynamic(true);
+        body_phyBody->setCategoryBitmask((int)PhysicsCategory::Player);
+        body_phyBody->setCollisionBitmask((int)PhysicsCategory::None);
+        body_phyBody->setContactTestBitmask((int)PhysicsCategory::Wall);
+        test_player->setPhysicsBody(body_phyBody);
     }
 
-    this->addChild(map_0 , 2);
-    this->addChild(player_0 , 2);
+
 }
+
+void InGameScene::_schedule(float dt)
+{
+    //    log( "UT_Player::_schedule() called !" );
+    
+    //Touch ball calculate
+    {
+        // move X
+        if( t_delta.x > t_marge ){
+            player_mv_R = true;
+            player_mv_L = false;
+        }else if(t_delta.x < -t_marge){
+            player_mv_R = false;
+            player_mv_L = true;
+        }else{
+            player_mv_R = player_mv_L = false;
+        }
+        
+        //Move Y
+        if( t_delta.y > t_marge ){
+            player_mv_U = true;
+            player_mv_D = false;
+        }else if(t_delta.y < -t_marge){
+            player_mv_U = false;
+            player_mv_D = true;
+        }else{
+            player_mv_U = player_mv_D = false;
+        }
+    }
+    
+    //Player Fire
+    if(player_atk){
+        _attack_far();
+    }
+    
+    //Player move
+    auto pl_sp = test_player->speed * dt;
+    auto map_sp = test_player->speed * dt;
+    auto pos_ = test_player->getPosition();
+    auto pos_map = test_map->getPosition();
+    if(player_mv_R){  // Move Horistal
+        pos_.x += pl_sp;
+        pos_map.x -= map_sp;
+//        if( pos_1.x > visibleSize.width ) pos_1.x = 0;
+    }else if(player_mv_L){
+        pos_.x -= pl_sp;
+        pos_map.x += map_sp;
+//        if( pos_1.x < 0 ) pos_1.x = visibleSize.width;
+    }
+    
+    if(player_mv_U){   // Move Vertical
+        pos_.y += pl_sp;
+        pos_map.y -= map_sp;
+//        if( pos_1.y > visibleSize.height ) pos_1.y = 0;
+    }else if(player_mv_D){
+        pos_.y -= pl_sp;
+        pos_map.y += map_sp;
+//        if( pos_1.y < 0 ) pos_1.y = visibleSize.height;
+    }
+    test_player->setPosition(pos_);
+    test_map->setPosition(pos_map);
+}
+
+
+
+void InGameScene::_attack_near()
+{
+    log( "UT_Player::_attack_near() called !" );
+}
+
+void InGameScene::_attack_far()
+{
+    
+    auto n_pos = test_player->getPosition();
+    n_pos.x += 200;
+    auto bullet = test_player->EmitOneBullet(n_pos);
+    if( bullet != nullptr ){
+        test_map->addChild(bullet); ////*****
+//        log( "UT_Player::_attack_far() >> add bullet !" );
+    }else{
+        log( "UT_Player::_attack_far() >> bullet is null !" );
+    }
+}
+
+
+
+    //***** ********* *****//
+    //***** callbacks *****//
+    //***** ********* *****//
 
 void InGameScene::BackToMenuCallback(Ref* pSender)
 {
@@ -141,31 +244,59 @@ void InGameScene::BackToMenuCallback(Ref* pSender)
 /***** on touch *****/
 bool InGameScene::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *unused_event)
 {
-    Vec2 touchLocation = touch->getLocation();
-//    Vec2 offset = touchLocation - _player->getPosition();
-  
-    auto player_0 = this->getChildByName(Name_player);
-    if( player_0 != nullptr ){
-        
-        float eachMoveDuration_long = 100;
-        
-        auto dest = std::sqrt(std::pow(player_0->getPositionX() - touchLocation.x, 2) + std::pow(player_0->getPositionY() - touchLocation.y, 2));
-        
-        auto actionMove = MoveTo::create(dest/eachMoveDuration_long, touchLocation);
-        player_0->stopAllActions();
-        player_0->runAction(Sequence::create(actionMove, nullptr));
-    }else{
-        MessageBox("player not exist","Alert");
-    }
+//    log( "UT_Player::onTouchBegan() called!" );
+    t_delta = cocos2d::Vec2(0,0);
+    t_start = sprit_touchball_state->getPosition();
+    player_atk = true;
     
     return true;
 }
 
+void InGameScene::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *unused_event)
+{
+//    log( "UT_Player::onTouchMoved() called!" );
+    auto t_cur = touch->getLocation();
+    t_delta = cocos2d::Vec2(  t_cur.x - t_start.x , t_cur.y - t_start.y );
+    sprit_touchball_move->setPosition( t_cur );
+    
+    //    return true;
+}
+
+void InGameScene::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *unused_event)
+{
+//    log( "UT_Player::onTouchEnded() called!" );
+    t_delta = cocos2d::Vec2(0,0);
+    sprit_touchball_move->setPosition( sprit_touchball_state->getPosition());
+    
+    player_mv_R = player_mv_L = player_mv_U = player_mv_D = player_atk = false;
+}
+
 bool InGameScene::onContactBegan(PhysicsContact &contact)
 {
-//    auto nodeA = contact.getShapeA()->getBody()->getNode();
-//    auto nodeB = contact.getShapeB()->getBody()->getNode();
-//    
+    auto nodeA = contact.getShapeA()->getBody()->getNode();
+    auto nodeB = contact.getShapeB()->getBody()->getNode();
+    
+    
+    
+    //cases
+    if( nodeA == test_player || nodeB == test_player ){
+        
+        //case what is object
+        cocos2d::log( " nodeA name  %s" , nodeA->getName().c_str() );
+        cocos2d::log( " nodeB name  %s" , nodeB->getName().c_str() );
+        
+    }else if( false ){
+        //case bullet
+        
+        //if Player
+        
+        //if Enermy
+        
+        //if Wall
+    }else if( false ){
+    
+    }
+    
 //    nodeA->removeFromParent();
 //    nodeB->removeFromParent();
     return true;

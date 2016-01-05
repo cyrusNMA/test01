@@ -22,16 +22,17 @@ class GameMap : public cocos2d::Node
     cocos2d::Vec2 node_size = cocos2d::Vec2(edget, edget);
     cocos2d::Vector<cocos2d::Node*> plants;
     
+    cocos2d::Sprite* CreateWall( std::string res_path , cocos2d::Vec2 pos , int categoryBit , int collisionBitmask , int contactTestBitmask);
+    cocos2d::Sprite* CreateFloor( std::string res_path  , cocos2d::Vec2 pos);
+    
+    
     public :
     
-    void Grend( cocos2d::Size screem_size );
     
+    void BuildMap( std::string res_path_ground , cocos2d::Size n_size , int categoryBit , int collisionBitmask , int contactTestBitmask);
+
     
-    bool IsInsideTheMap( cocos2d::Vec2 n_pos );
 };
 
-class GmaeMapPlant : public cocos2d::Node
-{
-};
 
 #endif /* GameMap_h */

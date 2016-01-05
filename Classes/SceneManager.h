@@ -21,6 +21,7 @@
 
 //**** Unit Test
 #include "UT_Player.h"
+#include "UT_Map.h"
 
 class SceneManager
 {
@@ -36,6 +37,7 @@ class SceneManager
             Menu
             , InGame
             , UT_player
+            , UT_map
         };
     
         SceneManager();

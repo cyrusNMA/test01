@@ -43,6 +43,10 @@ cocos2d::Scene* SceneManager::getScene(){
         case vailScene::UT_player :
             return UT_Player::createScene();
             break;
+        case vailScene::UT_map :
+            return UT_Map::createScene();
+            break;
+            
     }
     
     return nullptr;
