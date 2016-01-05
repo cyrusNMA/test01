@@ -13,6 +13,7 @@
 		189499E71C26C3DF00E16CC6 /* Charactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189499E51C26C3DF00E16CC6 /* Charactor.cpp */; };
 		189499EE1C26F6F400E16CC6 /* UT_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189499EC1C26F6F400E16CC6 /* UT_Player.cpp */; };
 		189499F21C27B40B00E16CC6 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 189499F11C27B40B00E16CC6 /* sounds */; };
+		18E110291C38EDAE006F0B1D /* UT_Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18E110271C38EDAE006F0B1D /* UT_Map.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -118,6 +119,8 @@
 		189499EC1C26F6F400E16CC6 /* UT_Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UT_Player.cpp; sourceTree = "<group>"; };
 		189499ED1C26F6F400E16CC6 /* UT_Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UT_Player.h; sourceTree = "<group>"; };
 		189499F11C27B40B00E16CC6 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		18E110271C38EDAE006F0B1D /* UT_Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UT_Map.cpp; sourceTree = "<group>"; };
+		18E110281C38EDAE006F0B1D /* UT_Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UT_Map.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -252,6 +255,8 @@
 			children = (
 				189499EC1C26F6F400E16CC6 /* UT_Player.cpp */,
 				189499ED1C26F6F400E16CC6 /* UT_Player.h */,
+				18E110271C38EDAE006F0B1D /* UT_Map.cpp */,
+				18E110281C38EDAE006F0B1D /* UT_Map.h */,
 			);
 			name = UnitTest;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				189499E71C26C3DF00E16CC6 /* Charactor.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				18E110291C38EDAE006F0B1D /* UT_Map.cpp in Sources */,
 				1854A0C01C21BBB600B395BA /* GameMap.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				189499EE1C26F6F400E16CC6 /* UT_Player.cpp in Sources */,

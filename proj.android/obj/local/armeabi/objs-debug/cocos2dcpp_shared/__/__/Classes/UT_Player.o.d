@@ -351,6 +351,39 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/UT_Player.o: \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCString.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
  /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/CocosGUI.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIWidget.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCProtectedNode.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayoutParameter.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/GUIExport.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/GUIDefine.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../base/ObjectFactory.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayout.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIButton.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UICheckBox.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIImageView.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIText.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextAtlas.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILoadingBar.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIScrollView.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIListView.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UISlider.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextField.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCTextFieldTTF.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextBMFont.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIPageView.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIHelper.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIRichText.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIHBox.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIVBox.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIRelativeBox.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIVideoPlayer.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIWebView.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIDeprecated.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIScale9Sprite.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayoutComponent.h \
+ /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCComponent.h \
  jni/../../Classes/Charactor.h
 
 jni/../../Classes/UT_Player.h:
@@ -1056,5 +1089,71 @@ jni/../../Classes/UT_Player.h:
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 
 /Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/CocosGUI.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIWidget.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCProtectedNode.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayoutParameter.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/GUIExport.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/GUIDefine.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../base/ObjectFactory.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayout.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIButton.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UICheckBox.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIImageView.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIText.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextAtlas.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILoadingBar.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIScrollView.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIListView.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UISlider.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextField.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCTextFieldTTF.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UITextBMFont.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIPageView.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIHelper.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIRichText.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIHBox.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIVBox.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIRelativeBox.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIVideoPlayer.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIWebView.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIDeprecated.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIScale9Sprite.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../ui/UILayoutComponent.h:
+
+/Users/cyruslam/Development/cocos2d/SluggishChildCreativeGroup/test01/proj.android/../cocos2d/cocos/3d/../2d/CCComponent.h:
 
 jni/../../Classes/Charactor.h:
