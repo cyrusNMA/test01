@@ -30,11 +30,7 @@ class UT_Map : public cocos2d::Layer
     static cocos2d::Scene* createScene();
     virtual bool init();
     
-    //***** Test case *****//
-    cocos2d::Sprite* CreateWall( std::string res_path , cocos2d::Vec2 pos);
-    cocos2d::Sprite* CreateFloor( std::string res_path  , cocos2d::Vec2 pos);
-    void BuildMap( std::string res_path_ground , cocos2d::Size n_size);
-    
+
     //***** callbacks *****//
     void Scheduler(float dt);
     

@@ -48,17 +48,27 @@ bool UT_Map::init(){
         return false;
     }
     
+    //seeds the random number generator
+    srand((unsigned int)time(nullptr));
+    
     visibleSize = Director::getInstance()->getVisibleSize();
     origin = Director::getInstance()->getVisibleOrigin();
     
-    
+    //create wall
+    //If Full Paint FPS Droped to 12
+    //
+    test_map = new GameMap();
+    test_map->BuildMap("res/map/block_01.jpg" , Size(18, 10), (int)PhysicsCategory::Wall, (int)PhysicsCategory::None, (int)PhysicsCategory::Player);
+    this->addChild(test_map);
+
+    log("GetPlayerPos() ? (%f, %f)",test_map->GetPlayerPos().x , test_map->GetPlayerPos().y);
     
     //create wall crasher
     if(true){
         body = cocos2d::DrawNode::create();
         body->drawSolidRect(Vec2(0,0), Vec2(10,25), Color4F(0.1, 0, 1, 1));
-        body->setPosition(Vec2(visibleSize.width/4, visibleSize.height/2));
-        this->addChild(body);
+        body->setPosition(test_map->GetPlayerPos());
+        test_map->addChild(body);
         body->setName("Player_body");
         body->setZOrder(1);
         
@@ -70,13 +80,7 @@ bool UT_Map::init(){
         body->setPhysicsBody(body_phyBody);
     }
     
-    //create wall
-    //If Full Paint FPS Droped to 12
-    //
-    test_map = new GameMap();
-    test_map->BuildMap("res/map/block_01.jpg" , Size(30, 25), (int)PhysicsCategory::Wall, (int)PhysicsCategory::None, (int)PhysicsCategory::Player);
-    this->addChild(test_map);
-
+    
     this->schedule(schedule_selector(UT_Map::Scheduler));
     
     
@@ -89,70 +93,6 @@ bool UT_Map::init(){
 }
 
 
-
-cocos2d::Sprite* UT_Map::CreateWall( std::string res_path , cocos2d::Vec2 pos ){
-    
-    auto n_wall_ = Sprite::create(res_path);
-    n_wall_->setName("Wall");
-    n_wall_->setZOrder(0);
-    n_wall_->setPosition(Vec2(n_wall_->getContentSize().width * pos.x, n_wall_->getContentSize().height * pos.y));
-    
-    this->addChild(n_wall_);
-    
-    if(true){
-    auto wall_Size = n_wall_->getContentSize();
-    auto n_physicsBody = PhysicsBody::createBox(Size(wall_Size.width , wall_Size.height),PhysicsMaterial(0.1f, 1.0f, 0.0f));
-    
-    
-    n_physicsBody->setDynamic(true);
-    n_physicsBody->setCategoryBitmask((int)PhysicsCategory::Wall);
-    n_physicsBody->setCollisionBitmask((int)PhysicsCategory::None);
-    n_physicsBody->setContactTestBitmask((int)PhysicsCategory::Player);
-    
-    //Set Physics body to the object wall
-    n_wall_->setPhysicsBody(n_physicsBody);
-    }
-    
-    return n_wall_;
-}
-
-cocos2d::Sprite* UT_Map::CreateFloor( std::string res_path , cocos2d::Vec2 pos ){
-    
-    auto n_wall_ = Sprite::create(res_path);
-    n_wall_->setName("Floor");
-    n_wall_->setZOrder(0);
-    n_wall_->setPosition(Vec2(n_wall_->getContentSize().width * pos.x, n_wall_->getContentSize().height * pos.y));
-    this->addChild(n_wall_);
-    
-    auto wall_Size = n_wall_->getContentSize();
-    
-    return n_wall_;
-}
-
-void UT_Map::BuildMap( std::string res_path_ground , cocos2d::Size n_size){
-
-    int h_cnt = n_size.width;
-    int v_cnt = n_size.height;
-    for(int w_idx = 0 ; w_idx < h_cnt * v_cnt ; w_idx ++ )
-    {
-        //calcu a new pos for each block
-        auto n_pos = Vec2( (w_idx % h_cnt), (int)(w_idx / h_cnt));
-        
-        //Case where do plast the wall
-        if( (w_idx % h_cnt == 0 || w_idx % h_cnt == h_cnt-1) ||
-            ((int)(w_idx / h_cnt) == 0 || (int)(w_idx / h_cnt) == v_cnt-1)){
-            CreateWall(res_path_ground , n_pos);
-        }else{
-            CreateFloor(res_path_ground , n_pos);
-        }
-        
-    }
-    
-
-}
-
-
-
     //***** ********* *****//
     //***** callbacks *****//
     //***** ********* *****//
@@ -161,7 +101,7 @@ void UT_Map::Scheduler(float dt){
     
 //    log( "Scheduler() > Dealt Time ? %f" , dt);
     
-    if( !body )
+//    if( !body )
         return;
     
     auto mov_sp = 100;
