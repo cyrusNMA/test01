@@ -16,6 +16,7 @@ bool player_mv_L = false;
 bool player_mv_R = false;
 bool player_mv_U = false;
 bool player_mv_D = false;
+Vec2 testing_pos;
 
 Scene* UT_Player::createScene()
 {
@@ -42,6 +43,10 @@ bool UT_Player::init()
     visibleSize = Director::getInstance()->getVisibleSize();
     origin = Director::getInstance()->getVisibleOrigin();
     
+    //Setup_ testing datas
+    testing_pos = Vec2(visibleSize.width/2, visibleSize.height/2);
+    
+    
     test_player = new Player();
     test_player->hp = 10;
     test_player->speed = 10;
@@ -55,6 +60,13 @@ bool UT_Player::init()
     log( "UT_Player::init() test_player set done" );
 //
     test_enemy = new Enemy();
+    test_enemy->hp = 100;
+    test_enemy->speed = 1;	
+    test_enemy->attack = 1;
+    auto enemyBody = cocos2d::DrawNode::create();
+    enemyBody->drawSolidRect(Vec2(0,0), Vec2(10,25), Color4F(0.2, 0.2, 1, 1));
+    test_enemy->addChild(enemyBody);
+    test_enemy->setPosition(testing_pos);
     this->addChild(test_enemy);
     log( "UT_Player::init() test_enemy set done" );
     
@@ -81,6 +93,7 @@ bool UT_Player::init()
     
     //set rand
     srand((unsigned int)time(nullptr));
+    
     
     //
     this->schedule(schedule_selector(UT_Player::_schedule));
@@ -118,7 +131,8 @@ void UT_Player::_schedule(float dt)
     }
     
     //Player Fire
-    if(player_atk){
+//    if(player_atk)
+    {
         _attack_far();
     }
     
@@ -152,30 +166,6 @@ void UT_Player::_schedule(float dt)
     }
 }
 
-void UT_Player::_move(Ref* sender, ui::Widget::TouchEventType type)
-{
-    log( "UT_Player::_move() called !" );
-    
-    switch (type)
-    {
-        case ui::Widget::TouchEventType::BEGAN:
-            log( "UT_Player::_move() called  >> TouchEventType::BEGAN" );
-            break;
-        case ui::Widget::TouchEventType::ENDED:
-            log( "UT_Player::_move() called  >> TouchEventType::ENDED" );
-            break;
-        case ui::Widget::TouchEventType::MOVED:
-            log( "UT_Player::_move() called  >> TouchEventType::MOVED" );
-            break;
-        case ui::Widget::TouchEventType::CANCELED:
-            log( "UT_Player::_move() called  >> TouchEventType::CANCELED" );
-            break;
-        default:
-            log( "UT_Player::_move() called  >> default" );
-            break;
-    }
-}
-
 
 void UT_Player::_attack_near()
 {
@@ -185,8 +175,8 @@ void UT_Player::_attack_near()
 void UT_Player::_attack_far()
 {
     
-    auto n_pos = test_player->getPosition();
-    n_pos.x += 200;
+    auto n_pos = testing_pos;
+    
     auto bullet = test_player->EmitOneBullet(n_pos);
     if( bullet != nullptr ){
         this->addChild(bullet);

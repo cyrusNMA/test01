@@ -41,7 +41,6 @@ public:
     
     //***** test cases *****//
     void _schedule(float dt);
-    void _move(Ref* sender, cocos2d::ui::Widget::TouchEventType type);
     void _attack_near();
     void _attack_far();
     

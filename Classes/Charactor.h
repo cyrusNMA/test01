@@ -8,8 +8,10 @@
 
 #ifndef Charactor_h
 #define Charactor_h
+#define PI 3.14159265
 
 #include "cocos2d.h"
+
 
 class GameObject : public cocos2d::Node
 {
@@ -24,6 +26,7 @@ class Charactor : public GameObject
     protected :
     float eachMoveDuration_long = 500;
     float attackFeq = 0.5;
+    float shoot_dest = 200;
     bool ableToFire = false;
     
     public :
@@ -56,13 +59,43 @@ class Charactor : public GameObject
     
     cocos2d::Node* EmitOneBullet(cocos2d::Vec2 targetPos)
     {
+        float n_pos_x = targetPos.x - this->getPositionX();
+        float n_pos_y = targetPos.y - this->getPositionY();
+        cocos2d::Vec2 n_pos = cocos2d::Vec2::ZERO;
+        if( n_pos_x != 0 && n_pos_y != 0 )
+        {
+        
+            float angle = atan2f(fabs(n_pos_y), fabs(n_pos_x)) * 180 / PI;
+            float calcu_x = cosf ( angle * PI / 180.0 ) * shoot_dest;
+            float calcu_y = sinf( angle * PI / 180.0 ) * shoot_dest;
+            
+        //
+        if( n_pos_x < 0 ) calcu_x *= -1;
+        if( n_pos_y < 0 ) calcu_y *= -1;
+            
+//            cocos2d::log(" this pos %f , %f " , getPositionX() , getPositionY());
+//            cocos2d::log(" dif pos %f , %f " , n_pos_x , n_pos_y);
+//            cocos2d::log(" angle ?? %f > %f , %f" , angle , calcu_x , calcu_y);
+//            cocos2d::log(" check fabs %f , %f", fabs(n_pos_x) , fabs(n_pos_y) );
+            n_pos = cocos2d::Vec2(this->getPositionX() + calcu_x,
+                                  this->getPositionY() + calcu_y);
+        }else{
+            n_pos = this->getPosition();
+            if( n_pos_x == 0 )
+            {
+                n_pos.y += 200 * (n_pos_y < 0 ? -1 : 1);
+            }else{
+                n_pos.x += 200 * (n_pos_x < 0 ? -1 : 1) ;
+            }
+        }
+        
         //create bullet
         if( !ableToFire )
             return nullptr;
         else
             ableToFire = false;
         
-        cocos2d::log("return bullet");
+//        cocos2d::log("return bullet");
         
         auto n_bullet = cocos2d::DrawNode::create();
         n_bullet->drawSolidRect(cocos2d::Vec2::ZERO, cocos2d::Vec2(10, 10), cocos2d::Color4F(1,1,1,1));
@@ -72,7 +105,7 @@ class Charactor : public GameObject
         n_bullet->setPosition(this->getPosition());
         
         //set target position
-        auto actionMove = cocos2d::MoveTo::create(GetDest(this->getPosition() ,targetPos)/eachMoveDuration_long, targetPos);
+        auto actionMove = cocos2d::MoveTo::create(GetDest(this->getPosition() ,n_pos)/eachMoveDuration_long, n_pos);
         auto actionRemove = cocos2d::RemoveSelf::create();
         n_bullet->runAction(cocos2d::Sequence::create(actionMove, actionRemove, nullptr));
         
